@@ -300,12 +300,17 @@
                 <a href="tel:6788652766" class="phone-link">(678) 865-2766</a>
             </div>
 
-            <form class="email-form" action="mailto:nelsondcarvajal@gmail.com" method="post" enctype="text/plain">
+            <form class="email-form" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="06c5b2ee-317c-4ba9-9ce1-1ab870a76f1d">
+                <input type="hidden" name="subject" value="🎤 Nuevo suscriptor - DVJ Productions">
+                <input type="hidden" name="from_name" value="DVJ Productions Website">
+                <input type="hidden" name="redirect" value="">
                 <label for="email">Déjanos tu correo para avisarte cuando estemos listos:</label>
                 <div class="input-group">
                     <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit">Notificarme</button>
+                    <button type="submit" id="submit-btn">Notificarme</button>
                 </div>
+                <p id="form-message" style="margin-top: 1rem; display: none;"></p>
             </form>
         </main>
 
